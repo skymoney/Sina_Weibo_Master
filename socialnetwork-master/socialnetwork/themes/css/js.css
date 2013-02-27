@@ -1,0 +1,570 @@
+@charset "utf-8";
+
+/* CSS Document */
+body{font-size:12px;   margin:0 auto;}
+
+
+			 
+
+
+/*************************************************** index header  2级下拉菜单  start ****************************************************************/
+	   
+	   
+#site-nav {width:300px;
+	       z-index:10000; 
+           height:22px;
+          
+		   color:#000; 
+		   line-height:19px; 
+		   position:relative; 
+		  }
+		   
+#site-nav a {color: #767470}
+#site-nav a:hover {color: #850116;}
+
+#site-nav .quick-menu {
+	width:230px;
+	right:30px;
+	position:absolute;
+	top:7px;
+						}
+#site-nav .quick-menu Li { background:url(../images/mbg.png) no-repeat}
+
+#site-nav .quick-menu Li { background-position:right 6px; 
+						   padding-right:10px;
+						   padding-left:10px; 
+						   padding-top:2px;
+						   padding-bottom:0px; 
+						   float:left; 
+						   margin-left:-1px;
+						    } 
+#site-nav .quick-menu Li.last {BACKGROUND: none transparent scroll repeat 0% 0%}  /* 判断最后的显示 */
+
+#site-nav .quick-menu LI.menu-item {padding-right:0px; 
+                                    padding-left:0px; 
+									padding-bottom:0px;
+									padding-top:0px; 
+									position:relative
+									}
+
+ /* JS 根据情况选择显示方式 start */	                                
+#site-nav .quick-menu .cart {PADDING-TOP: 1px; POSITION: relative; _padding-top: 2px}
+#site-nav .quick-menu .cart A {PADDING-LEFT: 16px}
+#site-nav .quick-menu .cart S {
+	BACKGROUND-POSITION: -83px -21px;
+	LEFT: 9px;
+	WIDTH: 14px;
+	POSITION: absolute;
+	TOP: 6px;
+	HEIGHT: 11px
+}
+ /* JS 根据情况选择显示方式 end */	  
+
+#site-nav .menu-hd { height:20px;
+					 padding-right:22px; 
+					 padding-left:10px;
+ 					 padding-bottom:0px;
+					 margin:1px 1px 0px;  
+					 padding-top:0px;
+					 display:block; 
+					 z-index:10002; 
+					 cursor:pointer;
+					 position:relative;
+					 }  /* 公用部分 背景区域控制 */	 
+					 
+#site-nav .mytaobao .menu-hd {width:48px; padding-top:1px; padding-top:1px;} /* 登录账号 背景区域控制 */	
+
+
+/* 控制下拉三角形 */	
+#site-nav .menu-hd B {
+	border-right: #850116 4px solid;
+	border-top: #f4cb54 4px solid;
+	font-size: 0px;
+	right: 11px;
+	border-left: #850116 4px solid;
+	width: 0px;
+	line-height: 0;
+	border-bottom: #850116 4px solid;
+	position:absolute;
+	top: 7px;
+	height: 0px;
+-webkit-transition: -webkit-transform .2s ease-in; -moz-transition: -webkit-transform .2s ease-in; -o-transition: -webkit-transform .2s ease-in; transition: -webkit-transform .2s ease-in}
+/* 控制下拉三角形 */	
+
+/* 内容显示区域 start */
+#site-nav .menu-bd { border-right:#850116 1px solid; 
+                     border-top:#850116 1px solid; 
+					 display:none;
+					 z-index:10001;
+					 right:0px;
+					 ; background-image:url(../images/apply_bg.jpg); background-repeat:repeat-x;
+					 border-left:#850116 1px solid; 
+					 border-bottom:#850116 1px solid; 
+					 position:absolute;
+					 top:230px;
+}
+
+#site-nav .menu-bd-panel {padding-right:10px;
+						  padding-left:10px;
+						  padding-bottom:6px;
+						  padiding-top:10px;
+						  }
+/* 内容显示区域 end */
+
+
+/* 下拉菜单的 Iframe 隐藏层 start */
+#site-nav IFRAME.menu-bd { border-top-width:0px;
+                           border-left-width:0px;
+						   border-bottom-width:0px; 
+						   border-right-width:0px;
+						   z-index:-1;
+						   background:none transparent scroll repeat 0% 0%;
+						   filter:alpha(opacity=0); 
+						   float:left; }
+/* 下拉菜单的 Iframe 隐藏层 end */
+
+
+#site-nav .menu {position:relative}
+
+#site-nav .hover-menu .menu-hd {border-right: #850116 1px solid; 
+                                border-top: #850116 1px solid;   
+								border-left: #850116 1px solid; 
+								border-bottom: #850116 1px ;
+								background:#FFFAF4; 
+							    z-index:10003;
+								height:26px;
+								margin:0px;
+								
+								}
+
+
+								
+
+
+#site-nav .hover .menu-hd {border-right: #850116 1px solid; 
+                                border-top: #850116 1px solid;   
+								border-left: #850116 1px solid; 
+								border-bottom: #850116 1px;
+								background:#FFFAF4; 
+								margin:0px;
+								height:26px;
+								z-index:10003;
+								
+								}
+
+#site-nav .menu:hover .menu-bd {display:block;}
+#site-nav .hover .menu-bd {display:block;}
+
+#site-nav .hover-menu .menu-hd B {BORDER-LEFT-COLOR: #fff; FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); BORDER-BOTTOM-COLOR: #fff; BORDER-TOP-COLOR: #666; TOP: 5px; BORDER-RIGHT-COLOR: #fff; -moz-transform: rotate(180deg); -moz-transform-origin: 50% 30%; -webkit-transform: rotate(180deg); -webkit-transform-origin: 50% 30%; -o-transform: rotate(180deg); -o-transform-origin: 50% 30%; transform: rotate(180deg); transform-origin: 50% 30%}
+
+#site-nav .hover .menu-hd B {BORDER-LEFT-COLOR: #fff; FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); BORDER-BOTTOM-COLOR: #fff; BORDER-TOP-COLOR: #666; TOP: 5px; BORDER-RIGHT-COLOR: #fff; -moz-transform: rotate(180deg); -moz-transform-origin: 50% 30%; -webkit-transform: rotate(180deg); -webkit-transform-origin: 50% 30%; -o-transform: rotate(180deg); -o-transform-origin: 50% 30%; transform: rotate(180deg); transform-origin: 50% 30%}
+
+
+#site-nav .mytaobao .menu-bd {width:95px; 
+							line-height:1.7; 
+							top:26px;
+							height:57px;
+							}/* 下拉层的宽度 */
+							
+							
+#site-nav .mytaobao .menu-bd-panel { padding-right:10px; 
+                                     padding-left:10px; 
+									 padding-bottom:8px;
+									 padding-top:8px;
+                                   }/* 下拉层的宽度 */
+								   
+/*************************************************** index header  2级下拉菜单 end ****************************************************************/
+
+
+/*************************************************** acconut admin  添加账号下拉菜单  start ****************************************************************/
+#wrap-nav4{ width:290px; height:26px; padding-left:10px; line-height:26px; float:left;}   
+#site-nav2 {width:230px;
+	       z-index:10000; 
+           height:22px;
+          
+		   color:#000; 
+		   line-height:19px; 
+		   position:relative; 
+		  }
+		   
+#site-nav2 a {color: #767470}
+#site-nav2 a:hover {color: #850116;}
+
+#site-nav2 .quick-menu {
+	width:81px;
+	right:-67px;
+	position:absolute;
+	top:0px;
+						}
+#site-nav2 .quick-menu Li {}
+
+#site-nav2 .quick-menu Li { background-position:right 6px; 
+						   padding-right:10px;
+						   padding-left:10px; 
+						   padding-top:2px;
+						   padding-bottom:0px; 
+						   float:left; 
+						   margin-left:-1px;
+						    } 
+#site-nav2 .quick-menu Li.last {BACKGROUND: none transparent scroll repeat 0% 0%}  /* 判断最后的显示 */
+
+#site-nav2 .quick-menu LI.menu-item {padding-right:0px; 
+                                    padding-left:0px; 
+									padding-bottom:0px;
+									padding-top:0px; 
+									position:relative
+									}
+
+ /* JS 根据情况选择显示方式 start */	                                
+#site-nav2 .quick-menu .cart {PADDING-TOP: 1px; POSITION: relative; _padding-top: 2px}
+#site-nav2 .quick-menu .cart A {PADDING-LEFT: 16px}
+#site-nav2 .quick-menu .cart S {
+	BACKGROUND-POSITION: -83px -21px;
+	LEFT: 9px;
+	WIDTH: 14px;
+	POSITION: absolute;
+	TOP: 6px;
+	HEIGHT: 11px
+}
+ /* JS 根据情况选择显示方式 end */	  
+
+#site-nav2 .menu-hd { height:20px;
+					 padding-right:22px; 
+					 padding-left:10px;
+ 					 padding-bottom:0px;
+					 margin:1px 1px 0px;  
+					 padding-top:0px; display:block; 
+					 z-index:10002; 
+					 cursor:pointer;
+					 position:relative;
+					 }  /* 公用部分 背景区域控制 */	 
+					 
+#site-nav2 .mytaobao .menu-hd {width:48px; padding-top:1px; padding-top:1px;} /* 登录账号 背景区域控制 */	
+
+
+/* 控制下拉三角形 */	
+#site-nav2 .menu-hd B {
+	border-right: #FFF8EA 4px solid;
+	border-top: #666666 4px solid;
+	font-size: 0px;
+	right: 11px;
+	border-left: #FFF8EA 4px solid;
+	width: 0px;
+	line-height: 0;
+	border-bottom: #FFF8EA 4px solid;
+	position:absolute;
+	top: 7px;
+	height: 0px;
+-webkit-transition: -webkit-transform .2s ease-in; -moz-transition: -webkit-transform .2s ease-in; -o-transition: -webkit-transform .2s ease-in; transition: -webkit-transform .2s ease-in}
+/* 控制下拉三角形 */	
+
+/* 内容显示区域 start */
+#site-nav2 .menu-bd { border-right:#FFD69C 1px solid; 
+                     border-top:#FFD69C 1px solid; 
+					 
+					 z-index:10001;
+					 right:0px;
+					 background-image:url(../images/apply_bg.jpg); background-repeat:repeat-x;
+					 border-left:#FFD69C 1px solid; 
+					 border-bottom:#FFD69C 1px solid; 
+					 position:absolute;
+					 top:230px;
+}
+
+#site-nav2 .menu-bd-panel {padding-right:10px;
+						  padding-left:10px;
+						  padding-bottom:6px;
+						  padiding-top:10px;
+						  }
+/* 内容显示区域 end */
+
+
+/* 下拉菜单的 Iframe 隐藏层 start */
+#site-nav2 IFRAME.menu-bd { border-top-width:0px;
+                           border-left-width:0px;
+						   border-bottom-width:0px; 
+						   border-right-width:0px;
+						   z-index:-1;
+						   background:none transparent scroll repeat 0% 0%;
+						   filter:alpha(opacity=0); 
+						   float:left; }
+/* 下拉菜单的 Iframe 隐藏层 end */
+
+
+#site-nav2 .menu {position:relative}
+
+#site-nav2 .hover-menu  .menu-hd {border-right: #FFD69C 1px solid; 
+                                border-top: #FFD69C 1px solid;   
+								border-left: #FFD69C 1px solid; 
+								border-bottom: #FFD69C 1px ;
+								background:#FFFAF4; 
+							    z-index:10003;
+								height:24px;
+								margin:0px;
+								
+								}
+								
+
+
+#site-nav2 .hover .menu-hd {border-right: #FFD69C 1px solid; 
+                                border-top: #FFD69C 1px solid;   
+								border-left: #FFD69C 1px solid; 
+								border-bottom: #FFD69C 1px;
+								background:#FFFAF4; 
+								margin:0px;
+								height:26px;
+								z-index:10003;
+								
+								}
+
+#site-nav2 .menu:hover .menu-bd {display:block;}
+#site-nav2 .hover .menu-bd {display:block;}
+
+#site-nav2 .hover-menu  .menu-hd B {BORDER-LEFT-COLOR: #fff; FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); BORDER-BOTTOM-COLOR: #fff; BORDER-TOP-COLOR: #666; TOP: 5px; BORDER-RIGHT-COLOR: #fff; -moz-transform: rotate(180deg); -moz-transform-origin: 50% 30%; -webkit-transform: rotate(180deg); -webkit-transform-origin: 50% 30%; -o-transform: rotate(180deg); -o-transform-origin: 50% 30%; transform: rotate(180deg); transform-origin: 50% 30%}
+#site-nav2 .hover .menu-hd B {BORDER-LEFT-COLOR: #fff; FILTER: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); BORDER-BOTTOM-COLOR: #fff; BORDER-TOP-COLOR: #666; TOP: 5px; BORDER-RIGHT-COLOR: #fff; -moz-transform: rotate(180deg); -moz-transform-origin: 50% 30%; -webkit-transform: rotate(180deg); -webkit-transform-origin: 50% 30%; -o-transform: rotate(180deg); -o-transform-origin: 50% 30%; transform: rotate(180deg); transform-origin: 50% 30%}
+
+
+#site-nav2 .mytaobao .menu-bd {width:95px; 
+							line-height:1.7; 
+							top:26px;
+							height:57px;
+							}/* 下拉层的宽度 */
+							
+							
+#site-nav2 .mytaobao .menu-bd-panel { padding-right:10px; 
+                                     padding-left:10px; 
+									 padding-bottom:8px;
+									 padding-top:8px;
+                                   }/* 下拉层的宽度 */
+								   
+/*************************************************** acconut admin  添加账号下拉菜单  end ****************************************************************/
+
+/**成功案例 start**/
+#feature .prev {
+	BORDER-BOTTOM: #999 0px dotted; 
+	BORDER-LEFT: #999 0px dotted; 
+	TEXT-INDENT: -9999px; 
+	WIDTH: 30px; 
+	DISPLAY: block; 
+	BACKGROUND: url(../images/prev1.jpg) center top; 
+	FLOAT: left; HEIGHT:28px; 
+	BORDER-TOP: #999 0px dotted; 
+	TOP: -150px; 
+	BORDER-RIGHT: #999 0px dotted; 
+	position:relative;
+}
+#feature .next {
+	BORDER-BOTTOM: #999 0px dotted; 
+	BORDER-LEFT: #999 0px dotted; 
+	TEXT-INDENT: -9999px; 
+	WIDTH: 30px; DISPLAY: block; 
+	BACKGROUND: url(../images/next1.jpg) center top;
+	FLOAT: right;
+	HEIGHT: 28px;
+	BORDER-TOP: #999 0px dotted; 
+	TOP: -150px;
+	BORDER-RIGHT: #999 0px dotted;
+	position:relative;
+}
+#feature .prev:hover {
+	BACKGROUND-POSITION: center bottom
+}
+#feature .next:hover {
+	BACKGROUND-POSITION: center bottom
+}
+A IMG {
+	BORDER-BOTTOM-STYLE: none; 
+	BORDER-RIGHT-STYLE: none; 
+	BORDER-TOP-STYLE: none;
+	BORDER-LEFT-STYLE: none
+}
+#featureContainer {width:720px; float:left;}
+
+#feature { BORDER-BOTTOM: #999 0px dotted; 
+           POSITION: relative; 
+		   BORDER-LEFT: #999 0px dotted; 
+		   BORDER-TOP: #999 0px dotted;
+		   BORDER-RIGHT: #999 0px dotted }
+#block {
+	Z-INDEX: 0;
+	BORDER-BOTTOM: #999 0px dotted; 
+	POSITION: relative; 
+	BORDER-LEFT: #999 0px dotted; 
+	MARGIN: 0px auto;
+	PADDING-BOTTOM: 20px; 
+	PADDING-LEFT: 0px; 
+	WIDTH: 660px; 
+	PADDING-RIGHT: 0px; 
+	HEIGHT: 250px;  
+	OVERFLOW: hidden;
+	BORDER-TOP: #999 0px dotted;
+	BORDER-RIGHT: #999 0px dotted; 
+	PADDING-TOP: 0px
+}
+#block .box {
+	BORDER-BOTTOM: #d8d8d8 0px solid; 
+	BORDER-LEFT: #d8d8d8 0px solid; 
+	PADDING-BOTTOM: 10px; 
+	MARGIN: 0px 0px;
+	WIDTH: 210px; 
+	FLOAT: left; 
+	HEIGHT: 240px; 
+	BORDER-TOP: #d8d8d8 0px solid; 
+	BORDER-RIGHT: #d8d8d8 0px solid; 
+}
+#botton-scroll {
+	Z-INDEX: 0; 
+	BORDER-BOTTOM: #999 0px dotted; 
+	BORDER-LEFT: #999 0px dotted; 
+	MARGIN: 0px auto; 
+	WIDTH: 660px; FLOAT: left; 
+	HEIGHT: 270px; 
+	BORDER-TOP: #999 0px dotted; 
+	BORDER-RIGHT: #999 0px dotted
+}
+.featureUL {
+	 POSITION: relative;
+	 LIST-STYLE-TYPE: none; 
+	 MARGIN: 0px;
+	 WIDTH: 2000px; 
+	 FLOAT: left;LEFT: 0px
+}
+.featureBox {
+	 BORDER-BOTTOM: #999 0px dotted; 
+	 BORDER-LEFT: #999 0px dotted;
+	 WIDTH: 225px; 
+	 BACKGROUND-REPEAT: no-repeat;
+	 FLOAT: left; 
+	 HEIGHT: 250px; 
+	 OVERFLOW: hidden; 
+	 BORDER-TOP: #999 0px dotted; 
+	 BORDER-RIGHT: #999 0px dotted; 
+	 PADDING-TOP: 10px
+}
+/**成功案例 end**/
+
+/**合作伙伴 start**/
+#feature2 .prev2 {
+	BORDER-BOTTOM: #999 0px dotted; 
+	BORDER-LEFT: #999 0px dotted; 
+	TEXT-INDENT: -9999px; 
+	WIDTH: 30px;
+	DISPLAY: block;
+	BACKGROUND: url(../images/prev2.jpg) center top; 
+	FLOAT: left; 
+	HEIGHT:28px;
+	BORDER-TOP: #999 0px dotted; 
+	TOP: -50px; 
+	BORDER-RIGHT: #999 0px dotted; position:relative;
+}
+
+#feature2 .next2 {
+	BORDER-BOTTOM: #999 0px dotted; 
+	BORDER-LEFT: #999 0px dotted; 
+	TEXT-INDENT: -9999px; 
+	WIDTH: 30px; 
+	DISPLAY: block; 
+	BACKGROUND: url(../images/next2.jpg) center top;
+	FLOAT: right; 
+	HEIGHT: 28px; 
+	BORDER-TOP: #999 0px dotted; 
+	TOP: -50px; 
+	BORDER-RIGHT: #999 0px dotted;position:relative;
+}
+#feature2 .prev:hover {
+	BACKGROUND-POSITION: center bottom
+}
+#feature2 .next:hover {
+	BACKGROUND-POSITION: center bottom
+}
+A IMG {
+	BORDER-BOTTOM-STYLE: none; 
+	BORDER-RIGHT-STYLE: none; 
+	BORDER-TOP-STYLE: none; 
+	BORDER-LEFT-STYLE: none
+}
+#featureContainer2 {width:720px; float:left;}
+
+#feature2 { BORDER-BOTTOM: #999 0px dotted; 
+            POSITION: relative; BORDER-LEFT: #999 0px dotted; BORDER-TOP: #999 0px dotted; BORDER-RIGHT: #999 0px dotted }
+#block2 {
+	Z-INDEX: 0;
+	BORDER-BOTTOM: #999 0px dotted;
+	POSITION: relative;
+	BORDER-LEFT: #999 0px dotted;
+	MARGIN: 0px auto;
+	PADDING-BOTTOM:0px;
+	PADDING-LEFT: 0px;
+	WIDTH: 660px;
+	PADDING-RIGHT: 0px;
+	HEIGHT: 70px;
+	OVERFLOW: hidden;
+	BORDER-TOP: #999 0px dotted;
+	BORDER-RIGHT: #999 0px dotted;
+	PADDING-TOP: 0px
+}
+#block2 .box2 {
+	BORDER-BOTTOM: #d8d8d8 0px solid; 
+	BORDER-LEFT: #d8d8d8 0px solid; 
+	PADDING-BOTTOM: 10px; 
+	MARGIN: 0px 0px;
+	WIDTH: 1000px; 
+	FLOAT: left; 
+	HEIGHT: 240px;
+	BORDER-TOP: #d8d8d8 0px solid; 
+	BORDER-RIGHT: #d8d8d8 0px solid; 
+}
+
+#botton-scroll2 {
+	Z-INDEX: 0;
+	BORDER-BOTTOM: #999 0px dotted; 
+	BORDER-LEFT: #999 0px dotted; 
+	MARGIN: 0px auto; 
+	WIDTH: 660px; 
+	FLOAT: left;
+	HEIGHT: 80px;
+	BORDER-TOP: #999 0px dotted; 
+	BORDER-RIGHT: #999 0px dotted
+}
+.featureUL {
+	POSITION: relative;
+	LIST-STYLE-TYPE: none;
+	MARGIN: 0px;
+	WIDTH: 2800px;
+	FLOAT: left;
+	LEFT: 0px
+}
+.featureBox2 {
+	 BORDER-BOTTOM: #999 0px dotted; 
+	 BORDER-LEFT: #999 0px dotted; 
+	 WIDTH:165px; 
+	 BACKGROUND-REPEAT: no-repeat; 
+	 FLOAT: left; 
+	 HEIGHT: 60px; 
+	 OVERFLOW: hidden; 
+	 BORDER-TOP: #999 0px dotted; 
+	 BORDER-RIGHT: #999 0px dotted; 
+	 PADDING-TOP: 10px
+}
+
+
+
+/**合作伙伴 end**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

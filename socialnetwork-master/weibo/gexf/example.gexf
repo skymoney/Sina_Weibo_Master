@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="gbk"?>
+<gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1"                     xmlns="http://www.gexf.net/1.1draft">
+<graph defaultedgetype="directed" idtype="string" type="static">
+<nodes count="18">
+<node id="0.0" label="雷锋网济慈"/>
+<node id="1.0" label="云却梦"/>
+<node id="2.0" label="雷锋网"/>
+<node id="3.0" label="短腿蜀黍阿占"/>
+<node id="4.0" label="萌Yee"/>
+<node id="5.0" label="大喵ABC"/>
+<node id="6.0" label="m4xh3k"/>
+<node id="7.0" label="请i输入昵称"/>
+<node id="8.0" label="shangdinizaina"/>
+<node id="9.0" label="Libaier"/>
+<node id="10.0" label="享买的鱼-周勇"/>
+<node id="11.0" label="道有道salsa陈丽阳"/>
+<node id="12.0" label="李麟_fory"/>
+<node id="13.0" label="安東小先生"/>
+<node id="14.0" label="25ME"/>
+<node id="15.0" label="黄何HEATHERM"/>
+<node id="16.0" label="道器"/>
+<node id="17.0" label="刘云辉sh"/>
+</nodes>
+<edges count="18">
+<edge id="0.0" source="0.0" target="1.0"/>
+<edge id="1.0" source="2.0" target="3.0"/>
+<edge id="2.0" source="2.0" target="4.0"/>
+<edge id="3.0" source="2.0" target="5.0"/>
+<edge id="4.0" source="2.0" target="6.0"/>
+<edge id="5.0" source="2.0" target="7.0"/>
+<edge id="6.0" source="2.0" target="8.0"/>
+<edge id="7.0" source="2.0" target="2.0"/>
+<edge id="8.0" source="2.0" target="9.0"/>
+<edge id="9.0" source="2.0" target="10.0"/>
+<edge id="10.0" source="2.0" target="0.0"/>
+<edge id="11.0" source="2.0" target="11.0"/>
+<edge id="12.0" source="2.0" target="12.0"/>
+<edge id="13.0" source="2.0" target="13.0"/>
+<edge id="14.0" source="2.0" target="14.0"/>
+<edge id="15.0" source="2.0" target="15.0"/>
+<edge id="16.0" source="2.0" target="16.0"/>
+<edge id="17.0" source="2.0" target="17.0"/>
+</edges>
+</graph>
+</gexf>

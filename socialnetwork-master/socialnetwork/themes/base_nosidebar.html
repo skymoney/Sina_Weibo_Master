@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Design by http://www.cssmoban.com
+Released for free under a Creative Commons Attribution 3.0 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Analysis Platform for Sina Weibo</title>
+<link href="/themes/css/style.css" rel="stylesheet" type="text/css" />
+<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/js/cufon-yui.js"></script>
+<script type="text/javascript" src="/themes/js/arial.js"></script>
+<script type="text/javascript" src="/themes/js/cuf_run.js"></script>
+<!-- CuFon ends -->
+{% block js %}
+{% endblock %}
+</head>
+<body>
+<link type="text/css" rel="stylesheet" href="/themes/css/public.css" />
+<link type="text/css" rel="stylesheet" href="/themes/css/modular.css" />
+<link type="text/css" rel="stylesheet" href="/themes/css/js.css" />
+<link type="text/css" rel="stylesheet" href="/themes/css/myspace.css" />
+<link type="text/css" rel="stylesheet" href="/themes/css/global.css" />
+<div class="main">
+
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo"></div>
+        {% block menu %}
+      <div class="menu_nav">
+        <ul>
+          <li class="active"><a href="home">Home</a></li>
+          <li><a href="status_fans">Fans Analysis</a></li>
+		  <li><a href="scene_market">Scene Marketing</a></li>
+		  <li><a href="weibotools">Tools</a></li>
+        </ul>
+      </div>
+        {% endblock %}
+      <div class="clr"></div>
+    </div>
+  </div>
+
+  <div class="content">
+  	<div class="content_resize">
+      {% block content %}
+  	  {% endblock %}
+  	 </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <!--<p class="lf">&copy; Copyright MyWebSite. Designed from <a href="http://www.cssmoban.com">网站模板</a></p> -->
+      <!--
+      <ul class="fmenu">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+    </ul>
+    -->
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

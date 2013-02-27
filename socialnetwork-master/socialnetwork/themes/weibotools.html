@@ -1,0 +1,156 @@
+{% extends "base_nosidebar.html" %}
+{% block js %}
+<script type="text/javascript" src="/themes/js/sigma.min.js"></script>
+<script type="text/javascript">
+function formsubmit(){
+document.forms[0].submit();
+}
+</script>
+{% endblock %}
+{% block menu %}
+<div class="menu_nav"> 
+<ul>
+<li><a href="home">Home</a></li>
+<li><a href="status_fans">Fans Analysis</a></li>
+<li><a href="scene_market">Scene Marketing</a></li>
+<li class="active"><a href="weibotools">Tools</a></li>
+</ul>
+</div>
+{% endblock %}
+{% block content %}
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td align="center">
+            <table boder="0" cellpadding="0" cellspacing="0">
+            	<tbody>
+            		<tr>
+            			<td width="">
+            			</td>
+            			<td>
+            			<div>
+            				<div>
+							<li><span class="Tbb">Please input the url of a weibo here</span></li>
+            				<form name="weibourl" id="weibourl" action="" method="get">
+            					<input type="text" name="searchurl" style="width:500px; height:22px;font-size:18px">
+            					<input type="image" src="/themes/images/submit1.gif" name="submit" onclick="formsubmit()">
+            				</form>
+            				</div>
+            			<div class="clr"></div>
+            			</div>
+            			</td>
+            		</tr>
+            	</tbody>
+            </table>
+        </td>
+    </tr>
+    </tbody>
+</table>    
+<div class="span12 sigma-parent" id="sigma-example-parent">
+    <div class="sigma-expand" id="sigma-example">
+    <canvas style="position: absolute;" id="sigma_edges_1" class="sigma_edges_canvas" width="600px" height="500px"></canvas>
+    <canvas style="position: absolute;" id="sigma_nodes_1" class="sigma_nodes_canvas" width="600px" height="500px"></canvas>
+    <canvas style="position: absolute;" id="sigma_labels_1" class="sigma_labels_canvas" width="600px" height="500px"></canvas>
+    <canvas style="position: absolute;" id="sigma_hover_1" class="sigma_hover_canvas" width="600px" height="500px"></canvas>
+    <div style="position: absolute;" id="sigma_monitor_1" class="sigma_monitor_div" width="600px" height="500px"></div>
+    <canvas style="position: absolute;" id="sigma_mouse_1" class="sigma_mouse_canvas" width="600px" height="500px"></canvas>
+	</div>
+</div>
+<script src="/themes/js/sigma.parseGexf.js"></script>
+<script type="text/javascript">function init() {
+  // Instanciate sigma.js and customize rendering :
+  var sigInst = sigma.init(document.getElementById('sigma-example')).drawingProperties({
+    defaultLabelColor: '#fff',
+    defaultLabelSize: 14,
+    defaultLabelBGColor: '#fff',
+    defaultLabelHoverColor: '#000',
+    labelThreshold: 6,
+    defaultEdgeType: 'curve'
+  }).graphProperties({
+    minNodeSize: 2,
+    maxNodeSize: 5,
+    minEdgeSize: 1,
+    maxEdgeSize: 1
+  }).mouseProperties({
+    maxRatio: 4
+  });
+
+  // Parse a GEXF encoded file to fill the graph
+  // (requires "sigma.parseGexf.js" to be included)
+  sigInst.parseGexf('{{gexfURI}}');
+
+  // Bind events :
+  var greyColor = '#666';
+  sigInst.bind('overnodes',function(event){
+    var nodes = event.content;
+    var neighbors = {};
+    sigInst.iterEdges(function(e){
+      if(nodes.indexOf(e.source)<0 && nodes.indexOf(e.target)<0){
+        if(!e.attr['grey']){
+          e.attr['true_color'] = e.color;
+          e.color = greyColor;
+          e.attr['grey'] = 1;
+        }
+      }else{
+        e.color = e.attr['grey'] ? e.attr['true_color'] : e.color;
+        e.attr['grey'] = 0;
+
+        neighbors[e.source] = 1;
+        neighbors[e.target] = 1;
+      }
+    }).iterNodes(function(n){
+      if(!neighbors[n.id]){
+        if(!n.attr['grey']){
+          n.attr['true_color'] = n.color;
+          n.color = greyColor;
+          n.attr['grey'] = 1;
+        }
+      }else{
+        n.color = n.attr['grey'] ? n.attr['true_color'] : n.color;
+        n.attr['grey'] = 0;
+      }
+    }).draw(2,2,2);
+  }).bind('outnodes',function(){
+    sigInst.iterEdges(function(e){
+      e.color = e.attr['grey'] ? e.attr['true_color'] : e.color;
+      e.attr['grey'] = 0;
+    }).iterNodes(function(n){
+      n.color = n.attr['grey'] ? n.attr['true_color'] : n.color;
+      n.attr['grey'] = 0;
+    }).draw(2,2,2);
+  });
+
+  // Draw the graph :
+  sigInst.draw();
+}
+
+if (document.addEventListener) {
+  document.addEventListener("DOMContentLoaded", init, false);
+} else {
+  window.onload = init;
+}
+</script>
+
+<style type="text/css">
+  /* sigma.js context : */
+  .sigma-parent {
+    position: relative;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #222;
+    height: 500px;
+  }
+  .sigma-expand {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  .buttons-container{
+    padding-bottom: 8px;
+    padding-top: 12px;
+  }
+</style>
+{% endblock %}

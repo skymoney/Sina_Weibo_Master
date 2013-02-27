@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% block js %}
+		<script type="text/javascript">
+$(function () {
+    var chart;
+    var areaname = [];
+    {% for name in areaname %}
+    areaname.push('{{name}}');
+    {% endfor %}
+    $(document).ready(function() {
+        render_gb_init();
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'container',
+                type: 'line'
+            },
+            title: {
+                text: 'Top ten locations'
+            },
+            subtitle: {
+                text: ''
+            },
+            xAxis: {
+categories:areaname 
+            },
+            yAxis: {
+                title: {
+                    text: 'Fans Number'
+                }
+            },
+            tooltip: {
+                enabled: false,
+                formatter: function() {
+                    return '<b>'+ this.series.name +'</b><br/>'+
+                        this.x +': '+ this.y ;
+                }
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    },
+                    enableMouseTracking: false
+                }
+            },
+            series: [{
+                name: 'Area fans',
+                      data:{{areanum}} 
+            }]
+        });
+        var tagname = [];
+        var tagnum= [];
+    {% for t in tag %}
+    tagname.push('{{t.0}}');
+    tagnum.push({{t.1}});
+    {% endfor %}
+
+// Build the chart
+chart = new Highcharts.Chart({
+chart: {
+renderTo: 'container1',
+type: 'column'
+},
+title: {
+text: 'Tags distribution'
+},
+subtitle: {
+text: ''
+},
+xAxis: {
+categories:tagname 
+},
+yAxis: {
+min: 0,
+title: {
+text: 'Percentage(%)'
+}
+},
+legend: {
+layout: 'vertical',
+backgroundColor: '#FFFFFF',
+align: 'left',
+verticalAlign: 'top',
+x: 100,
+y: 70,
+floating: true,
+shadow: true
+},
+tooltip: {
+formatter: function() {
+return ''+
+this.x +': '+ this.y +'%';
+}
+},
+plotOptions: {
+column: {
+pointPadding: 0.2,
+borderWidth: 0
+}
+},
+series: [{
+name: 'Tag',
+data:tagnum 
+}]
+});
+});
+});
+		</script>
+		<script type="text/javascript">
+            function render_gb_init(){
+            $(".rendergbc").hover(function () {
+                    $(this).addClass("fansbg");
+                    }, function () {
+                    $(this).removeClass("fansbg");
+                    }); 
+            }
+            </script>
+{% endblock %}
+{% block menu %}
+<div class="menu_nav"> 
+    <ul>
+          <li><a href="home">Home</a></li>
+          <li class="active"><a href="status_fans">Fans Analysis</a></li>
+          <li><a href="scene_market">Scene Marketing</a></li>
+          <li><a href="weibotools">Tools</a></li>
+      </ul>
+      </div>
+{% endblock %}
+{% block mainbar %}
+<script src="/themes/js/highcharts.js"></script>
+<script src="/themes/js/exporting.js"></script>
+<div class="fans_right leftB">
+<div class="guangb20">
+<div class="wrap_title1">Fans Analysis</div>
+<div style="padding:0 10px  10px 10px;">
+
+
+<div class="fans_t bodersl">
+<ul>
+<li>
+<i class="fm_icon"></i>
+Total fans number:&nbsp;<span class="Tbb">25111</span>&nbsp;
+</li>
+<li>
+<i class="fh_icon"></i>
+Active fans number:&nbsp;<span class="Tbb">7051</span>&nbsp;
+</li>
+</ul>
+</div>
+
+<div class="fans_list rendergbc">
+<b>Sex</b>
+<span class="man_i">{{male}}%</span>
+<span class="man_female">{{female}}%</span>
+</div>
+
+<div class="fans_list1 rendergbc">
+<b>Age</b>
+<div class="fans_n">
+<ul>
+<li>
+<span class="bigDot">{{age.0}}%</span>
+<p align="center">under 18</p>
+</li>
+<li>
+<span class="bigDot">{{age.1}}%</span>
+<p align="center">18-24</p>
+</li>
+<li>
+<span class="bigDot">{{age.2}}%</span>
+<p align="center">25-34</p>
+</li>
+<li>
+<span class="bigDot">{{age.3}}%</span>
+<p align="center">above 34</p>
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+
+
+<div class="fans_list1 rendergbc">
+<b>Terminal</b>
+<div class="fans_n">
+<ul>
+    {% for s in source %}
+<li>
+<span class="bigDot">{{s.1}}%</span>
+<p align="center">{{s.0}}</p>
+</li>
+{% endfor %}
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="fans_list1">
+<b>Tags distribution</b>
+    <div id="container1" style="min-width: 600px; height: 400px; margin: 0 auto"></div>
+<div class="clear"></div>
+</div>
+
+<div class="fans_list1">
+    <b>Location</b>
+    <div id="container" style="min-width: 600px; height: 400px; margin: 0 auto"></div>
+<div class="clear"></div>
+<div class="clear"></div>
+</div>
+
+</div>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+{% endblock %}
+{%block sidebar %}
+        <div class="gadget">
+          <B style="font:bold 24px Arial, Helvetica, sans-serif; color:#323a3f; padding:8px 0; margin:8px 0;">Statistical analysis</B>
+          <ul class="sb_menu">
+            <li class="active"><a href="status_fans">Fans analysis</a></li>
+          </ul>
+          <ul class="sb_menu">
+            <li ><a href="management_fans">Fans management</a></li>
+          </ul>
+        </div>
+{% endblock %}
+
+
+

@@ -1,0 +1,413 @@
+@charset "utf-8";
+/* CSS Document */
+
+/************************通用******************************************************/
+body{ margin:0px; padding:0px; font-family:"宋体"; font-size:12px; color:#6B6768; /* background-image:url(../images/top-bg.gif); background-repeat:repeat-x; */}
+ul,p,hr,li,form,h1,h2,h3,h4,h5,form{ margin:0px; padding:0px; list-style:none;}
+.clean{ clear:both;}
+.width100{ width:100%;}
+.allwidth{ width:980px; margin:0px auto;}
+.hand{ cursor:pointer;}
+.marginTop8{ margin-top:8px;}
+/************************通用******************************************************/
+
+/************************字体颜色控制 corlor****************************************/
+.pr1{ color:#820014;}
+.pr2{ color:#0C96A0;} 
+.pr3{ color:#EF1D3D;}
+.pr4{ color:#D79906;}
+.pr5{ color:#9E365D;} 
+.pr6{ color:#211144;}
+.pr7{ color:#1A3F32;}
+.pr8{ color:#259749;} 
+.pr9{ color:#C63945;}
+.pr10{ color:#0C566A;}
+.pr11{ color:#07307D;} 
+.pr12{ color:#4B042B;} 
+.pr13{ color:#B96A2C;} 
+.pr14{ color:#565305;}
+.pr15{ color:#1B8FC0;}
+.pr16{ color:#020C18;}  
+
+
+
+
+
+
+
+/************************字体颜色控制 corlor****************************************/
+
+/************************wedsite  head  start*************************************/
+.head{width:100%; }
+
+/*top-menu start*/
+
+#topAll{ width:1004px; height:35px; 
+         margin:0px auto; 
+		 background-image:url(../images/top-bg1.gif)}
+
+#topAll .t_l{ width:640px; 
+              height:35px; 
+			  float:left; 
+			  line-height:25px; 
+			  padding-left:10px;}
+			  
+#topAll .t_r{ width:350px; height:35px; 
+              float:left; }
+			  
+#topAll .t_r_text{ width:265px; height:35px; 
+                   float:left; line-height:35px; 
+				   text-align:center;  }		 
+
+#topAll .t_r_text a{ color:#FFB404; }	
+/*top-menu end*/		 
+
+/*logo部分 start*/
+#logo{ width:1004px;
+       height:80px; 
+       margin:0px auto;}
+	   
+#logoleft{width:235px;
+          height:80px;
+		  float:left;}
+		  
+#logoright{width:15px; 
+           height:80px;
+		   float:left;}
+		   
+#logoright2{width:260px; 
+            height:80px;
+			float:left;}
+			
+#logoright3 {width:350px;
+             height:80px; 
+			 float:right; 
+			 text-align:left;}
+/*logo部分 end*/
+
+/*line start*/
+.head_line{width:980px; height:10px; margin:0px auto;}
+/*line end*/
+
+/*top-menu start*/
+.top-menu{width:980px; height:80px; margin:0px auto; }
+
+.main_menu{width:980px; height:37px; margin:0px auto;}
+
+.main_menu li{width:110px; height:37px; 
+              float:left; 
+			  line-height:37px;  
+			  margin-right:10px;
+			  text-align:center; color:#D2CDCD;}
+			  
+.main_menu li a{color:#D2CDCD;}
+.main_menu li a:hover{color:#FFB404; }
+
+.main_menu .facous{ background-image:url(../images/menu-facous.gif); background-repeat:no-repeat;
+                    color:#2D2F32;
+					font-size:13px; font-weight:bold;
+					line-height:37px;}
+					
+.main_menu .facous a{ color:#2D2F32;}
+
+.main_menu .mb{width:960px; 
+              height:37px; float:left; 
+			  background-image:url(../images/menu-bg.gif);
+			  background-repeat:repeat-x;}
+
+.arc{width:10px; 
+     float:left; height:37px;}
+	 
+.main_menu .phone-number{width:590px; 
+                         height:37px;
+						 color:#D2CDCD;
+						 line-height:37px;
+						 text-indent:100px;
+						 float:left;
+						 padding-right:10px;
+						 text-align:right;
+						 font-size:12px;
+                 }
+	 
+.phone-number span{ font-family:Constantia,Georgia; 
+                    font-size:21px; font-weight:bold;}
+	 
+.main_menu2{width:968px; height:30px; 
+            padding-left:10px;
+			line-height:30px;
+            margin:0px auto; 
+			border-left:1px solid #D2CDCD;
+			border-right:1px solid #D2CDCD;
+			border-bottom:1px solid #D2CDCD; background-image:url(../images/menu-bg2.gif); background-repeat:repeat-x;
+		}
+		
+/*top-menu end*/
+
+/************************wedsite  head  end*************************************/
+
+/*********************页面左侧导航 left menu  start *****************************/
+
+
+
+#l1{ width:186px; 
+     min-height:600px; 
+	 border: 1px solid #DAD9D7;
+	 _height:600px; 
+	 float:left; 
+	 background-image:url(../images/leftmenu_Bg.jpg); 
+	 background-repeat:repeat-y;}
+	 
+#l1 .tt1{ width:186px; 
+          height:45px;  
+		  float:left; 
+		  background-image:url(../images/leftmenu_bg01.gif) ;
+		  display:inline; }
+		  
+#l1 .tt1-text{ width:60px; 
+               height:37px;
+			   line-height:37px;
+			   font-size:14px;
+			   font-weight:bold;
+			   color:#FACB04;
+			   margin:0px auto;
+		  }		  
+		  
+.tinfor1 { float:left;  width:186px;}
+
+.tinfor1 li{ width:170px;
+             height:33px; 
+             line-height:33px; 
+			 font-size:13px; 
+			 padding-left:16px;
+			 float:left; }
+			 
+			 
+			 
+.tt2{width:186px; 
+     height:45px;
+	 float:left; 
+	 margin-top:15px;
+	  background-image:url(../images/leftmenu_bg01.gif) ;}
+	 
+.tinfor2{ float:left; 
+          width:186px; margin-top:8px;}
+		  
+.tinfor2 li{ height:30px; font-size:13px;}
+
+.tinfor2 .tf1{ width:30px;
+               float:left; 
+			   height:28px; 
+			   text-align:center;}
+			   
+.tinfor2 .tf2{ width:154px; 
+               float:left; 
+			   height:28px;
+			   text-align:left; 
+			   line-height:28px; }
+			   
+.tinfor2 .tf3{ width:176px; 
+               float:left; 
+			   height:28px;
+			   text-align:left; 
+			   line-height:28px; 
+			   padding-left:10px;}
+			   
+.tt3{width:186px; 
+     height:45px; 
+	 float:left; 
+	 display:inline; 
+	 margin-top:15px;}
+	 
+.tz_text12{ font-size:12px; 
+            color:#989393;}
+			
+.ttltitle_foucs{ background-image:url(../images/tt1bg.jpg);
+                 background-repeat:repeat-x;}
+				 
+				 
+/*********************页面左侧导航 left menu end *****************************/
+
+
+/*********************页面 分页标签 star *****************************/
+.page{width:720px; height:40px; float:left; margin-top:15px; line-height:30px; font-size:14px;}
+.pages{
+	text-align:right;
+	color:#5B606B;
+	zoom:1;
+}
+.pages .pagenum{
+	border:none;
+	margin-left:0;
+	padding:0;
+}
+.pages .pagenum span{
+	width:25px;
+	text-align:center;
+	padding:0;
+}
+.pages span{
+	display:inline-block;
+	height:25px;
+	line-height:25px;
+	background-color:#F1F2F3;
+	border:1px solid #C7C7C7;
+	margin-left:3px;
+	padding:0 7px;
+}
+.pages .focus{
+	margin-top:-1px;
+	margin-top:0\9;
+	zoom:1;
+	background-color:#3A4C49;
+	font-weight:bold;
+	border:none; color:#FFF;
+    
+}
+.pages a{ color:#5B606B; text-decoration:none;}
+.pages a:hover{ color:#5B606B; text-decoration:underline;}
+
+/*********************页面 分页标签  end*****************************/
+
+/*********************页面  使用说明 introduce  start*****************************/
+#guideblock{ width:296px; 
+             float:left; 
+			 margin-left:8px; 
+			 display:inline; 
+			}
+
+
+#guideblock .explain{ width:296px; 
+                
+                      border:1px solid #DEDDDC;; background-image:url(../images/explain-bg.gif); 
+					  background-repeat:repeat-x; background-position:top;
+				      float:left; }
+					  
+#guideblock .explain_kong{width:3px; height:40px; float:left;}					  
+
+#guideblock .explain_title{ width:290px; height:40px;  margin-top:3px ;
+							background-image:url(../images/explain-title.gif); 
+					        background-repeat:repeat-x; 
+							border-bottom:1px solid #696663;
+				            float:left; }
+
+#guideblock .explain_title li {float:left; 
+                               line-height:40px;
+							   height:40px; 
+							   font-size:14px;
+							   font-weight:bold; 
+							   color:#2D2F32;
+							  }
+							  
+#guideblock .title_img{width:50px; height:40px; float:left }	
+
+#guideblock .title_txt{width:100px;
+                       height:40px; 
+					   float:left;
+					   margin-left:10px; }	
+					   	
+			   		   					  
+
+#guideblock .shuoming_are{width:270px; 
+						  float:left; 
+						  margin-left:1px;
+						   padding:10px;
+						  margin-bottom:5px;
+						  line-height:20px;
+						  background-color:#fff; border:1px dotted #D3D2D1;}
+
+/*********************页面  使用说明 introduce end*****************************/
+
+
+/**************************页面  脚注部分 star********************************/
+
+#newfooter{width:100%; z-index:11000 }
+#footer{ width:100%; 
+         height:39px; 
+		 background-image:url(../images/footbg_new.jpg); 
+		 background-repeat:repeat-x;}
+		 
+#footer .f_in{ width:980px; height:39px; margin:0 auto;}
+
+#footer .f_in .f_i1{ width:600px;
+                     height:39px;
+					 line-height:39px; 
+					 float:left; 
+					 text-align:left;}
+					 
+#footer .f_in .f_i2{ width:380px; 
+                     height:39px; 
+					 line-height:39px;
+					 float:left; 
+					 text-align:right;}
+					 
+
+#footer2 {width:100%; height:40px;}
+
+
+/**************************页面  脚注部分 end********************************/
+
+
+/**************************页面  消息通告 star********************************/
+
+
+
+/**消息通告 star**/
+.new_notice{height: 35px; 
+            margin: 0 auto;
+			width: 980px; 
+			background-color:#FDEEC7 ;
+			filter: alpha(opacity=75); opacity: 0.75;}
+			
+.new_notice li{ float:left; 
+                line-height:38px;}
+				
+.new_notice .notic_img{width:20px;
+                       height:35px; 
+					   margin-left:10px;}
+					   
+.new_notice .notic_title{width:80px; 
+                         height:35px;
+						 line-height:35px;
+						  font-size:14px; 
+						  font-weight:bold; 
+						  color:#000; 
+						  margin-left:5px;}
+						  
+.new_notice .notic_text{width:600px; 
+                        height:35px;
+						line-height:35px; 
+						font-size:14px; 
+						color:#000;
+						margin-left:5px;}
+						
+.new_notice .notic_but01 {width:100px; 
+                          height:35px;
+						  line-height:35px;
+						  margin-left:5px; }
+						  
+.new_notice .notic_but02 {width:100px; 
+                          height:35px;
+						  line-height:35px;
+						  margin-left:5px;}
+/** 消息通告 end**/
+
+/**顶部通告 star**/
+.fixed-bottom {position:fixed;bottom:0px;top:auto;}/* 底部固定 */
+ /* IE6 底部固定  */
+* html,* html body {background-image:url(../images/top-bg.gif); 
+                    background-repeat:repeat-x;
+					background-position:;background-attachment:top;}
+					
+* html .fixed-bottom{position:absolute;bottom:auto;
+                     top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+
+
+/**************************页面  消息通告 end********************************/
+
+
+
+
+
+
+
+

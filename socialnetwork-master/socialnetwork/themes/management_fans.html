@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+{% block js %}
+<script type="text/javascript">
+$(function () {
+    $(document).ready(function() {
+        changebg();
+        render_gb_init();
+        });
+    });
+    var URL = window.location.href;
+    function changeSearch(op,np){
+        var oldstr = "p="+op;
+        var newstr = "p="+np;
+        if (URL.indexOf(oldstr)==-1){
+            if (URL.indexOf("?")!=-1){
+                return URL+"&"+newstr;
+            }
+            else{
+                return URL+"?"+newstr;
+            }
+        }
+        else{
+            return URL.replace(oldstr,newstr);
+        }
+    }
+    function next(){
+        var url = changeSearch({{page}},{{page}}+1);
+        window.location.assign(url);
+    }
+    function front(){
+        if ({{page}}!=0){
+            var url = changeSearch({{page}},{{page}}-1);
+            window.location.assign(url);
+        }
+    }
+            function render_gb_init(){
+            $(".cropTrCls").hover(function () {
+                    $(this).addClass("mkt_t_bg");
+                    }, function () {
+                    $(this).removeClass("mkt_t_bg");
+                    }); 
+            }
+    
+function changebg(){
+    //function(){$(".it").addClass("selectw");}
+    document.getElementById("{{type}}").className="selectw";
+}
+</script>
+{% endblock %}
+{% block menu %}
+<div class="menu_nav"> 
+    <ul>
+<li><a href="home">Home</a></li>
+<li class="active"><a href="status_fans">Fans Analysis</a></li>
+<li><a href="scene_market">Scene Marketing</a></li>
+<li><a href="weibotools">Tools</a></li>
+</ul>
+</div>
+{% endblock %}
+{% block mainbar %}
+<div class="fans_right leftB">
+<div class="guangb10">
+    <div class="clear"></div>
+    <b>Intrest:</b>
+    <table align="right" cellpadding="10" cellspacing="0" border="0"  style="width:90%">
+      <colgroup>
+        <col width="15%" />
+        <col width="15%" />
+        <col width="15%" />
+        <col width="15%" />
+        <col width="15%" />
+        <col width="15%" />
+     </colgroup>
+        <tr>
+        <td align="left">
+            <a class="selectitem" id="null" href="management_fans">unlimited</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="entertainment" href="?type=entertainment">entertainment</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="fashion" href="?type=fashion">fashion</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="literature" href="?type=literature">literature</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="it" href="?type=it">IT</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="sports" href="?type=sports">sports</a>
+        </td>
+        </tr>
+        <tr>
+        <td align="left">
+            <a class="selectitem" id="games" href="?type=games">games</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="finance" href="?type=finance">finance</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="qualitylife" href="?type=qualitylife">quality life</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="shoppingonline" href="?type=shoppingonline">shopping online</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="science" href="?type=science">science</a>
+        </td>
+        <td align="left">
+            <a class="selectitem" id="service" href="?type=service">public service</a>
+        </td>
+        </tr>
+    </table>
+
+
+<div class="clear"></div>                                   
+
+</div>
+
+<div class="guangb20">
+<div class="wrap_dott">
+<div class="list_b1" style="margin:0px;">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1">
+<tr>
+
+<td align="center" bgcolor="#F2F2F2" class="ltitle">ScreenName</td>
+<!-- <td align="center" bgcolor="#F2F2F2" class="ltitle">认证</td> -->
+<td align="center" bgcolor="#F2F2F2" class="ltitle">Sex</td>
+<td align="center" bgcolor="#F2F2F2" class="ltitle">Location</td>
+<td align="center" bgcolor="#F2F2F2" class="ltitle">Number of fans</td>    
+
+<!-- <td align="center" bgcolor="#F2F2F2" class="ltitle">操作</td>  -->
+</tr>
+{% for fan in fans %}
+<tr class="cropTrCls " >
+    <td align="center" nickname="true"><a href="http://weibo.com/u/{{fan.4}}" class="linker-weibo-hre">{{fan.0}}</a></td>
+    {% if fan.1 = 'm' %}
+    <td align="center">Male</td>
+    {%else%}
+    <td align="center">Female</td>
+    {%endif%}
+<td align="center">{{fan.2}}</td>
+<td align="center"><span class="Tb">{{fan.3}}</span></td>
+</tr>
+{% endfor %}
+
+</table>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="s_list_n rightB">
+<a href="javascript:void(0);" onclick="front()" class="l_front" >Prev</a>
+<a href="javascript:void(0);" onclick="next()" class="l_next" >Next</a>
+</div>
+
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+{% endblock %}
+{%block sidebar %}
+        <div class="gadget">
+          <B style="font:bold 24px Arial, Helvetica, sans-serif; color:#323a3f; padding:8px 0; margin:8px 0;">Statistical analysis</B>
+          <ul class="sb_menu">
+            <li><a href="status_fans">Fans analysis</a></li>
+          </ul>
+          <ul class="sb_menu">
+            <li class="active"><a href="management_fans">Fans management</a></li>
+          </ul>
+        </div>
+{% endblock %}

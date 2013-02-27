@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="gbk"?>
+<gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1"                     xmlns="http://www.gexf.net/1.1draft">
+<graph defaultedgetype="directed" idtype="string" type="static">
+<nodes count="40">
+<node id="0.0" label="杨坤"/>
+<node id="1.0" label="看你那怂样"/>
+<node id="2.0" label="-香草咖啡"/>
+<node id="3.0" label="月阳春"/>
+<node id="4.0" label="小小小笨洋葱"/>
+<node id="5.0" label="胡红星phoebe"/>
+<node id="6.0" label="艾可儿的天涯"/>
+<node id="7.0" label="李新龙-lxl"/>
+<node id="8.0" label="Next_夏毅炜"/>
+<node id="9.0" label="吴桐不是梧桐W-T"/>
+<node id="10.0" label="雨中伞SFA"/>
+<node id="11.0" label="压力飞__FAY"/>
+<node id="12.0" label="一只肥菜鸟"/>
+<node id="13.0" label="翠花儿feel"/>
+<node id="14.0" label="六弦琴殇"/>
+<node id="15.0" label="淘宝潮牌时尚秀"/>
+<node id="16.0" label="洛小辰再战艺考"/>
+<node id="17.0" label="自然贰点零"/>
+<node id="18.0" label="hzshell"/>
+<node id="19.0" label="铁塔祝杨坤32场重庆站圆满成功"/>
+<node id="20.0" label="波菜909"/>
+<node id="21.0" label="有凤来仪-怡"/>
+<node id="22.0" label="插勒个画的JackyLee李科"/>
+<node id="23.0" label="laisheung-kit"/>
+<node id="24.0" label="梦iikk"/>
+<node id="25.0" label="vicbet"/>
+<node id="26.0" label="偶像快把小粉丝拎回家www-风浪"/>
+<node id="27.0" label="KiSs艺宝-WE"/>
+<node id="28.0" label="小米不开花的春天在哪里"/>
+<node id="29.0" label="微博网友_90324054"/>
+<node id="30.0" label="请法海吃切糕"/>
+<node id="31.0" label="不负苍井不负卿"/>
+<node id="32.0" label="FUCKINGCRAZYME"/>
+<node id="33.0" label="骚年老当家"/>
+<node id="34.0" label="罗氏代言--小丰"/>
+<node id="35.0" label="爱坤琳琳"/>
+<node id="36.0" label="雪儿恋上坤"/>
+<node id="37.0" label="小丶猪仔"/>
+<node id="38.0" label="Pary-Lucas"/>
+<node id="39.0" label="爱要有你才完美NY"/>
+</nodes>
+<edges count="40">
+<edge id="0.0" source="0.0" target="1.0"/>
+<edge id="1.0" source="0.0" target="2.0"/>
+<edge id="2.0" source="0.0" target="3.0"/>
+<edge id="3.0" source="0.0" target="4.0"/>
+<edge id="4.0" source="0.0" target="5.0"/>
+<edge id="5.0" source="0.0" target="6.0"/>
+<edge id="6.0" source="0.0" target="7.0"/>
+<edge id="7.0" source="0.0" target="8.0"/>
+<edge id="8.0" source="0.0" target="9.0"/>
+<edge id="9.0" source="0.0" target="10.0"/>
+<edge id="10.0" source="0.0" target="11.0"/>
+<edge id="11.0" source="0.0" target="12.0"/>
+<edge id="12.0" source="0.0" target="13.0"/>
+<edge id="13.0" source="0.0" target="14.0"/>
+<edge id="14.0" source="0.0" target="15.0"/>
+<edge id="15.0" source="0.0" target="16.0"/>
+<edge id="16.0" source="0.0" target="17.0"/>
+<edge id="17.0" source="0.0" target="18.0"/>
+<edge id="18.0" source="19.0" target="19.0"/>
+<edge id="19.0" source="0.0" target="20.0"/>
+<edge id="20.0" source="0.0" target="21.0"/>
+<edge id="21.0" source="0.0" target="22.0"/>
+<edge id="22.0" source="0.0" target="23.0"/>
+<edge id="23.0" source="0.0" target="24.0"/>
+<edge id="24.0" source="0.0" target="25.0"/>
+<edge id="25.0" source="0.0" target="26.0"/>
+<edge id="26.0" source="0.0" target="27.0"/>
+<edge id="27.0" source="0.0" target="28.0"/>
+<edge id="28.0" source="0.0" target="29.0"/>
+<edge id="29.0" source="0.0" target="30.0"/>
+<edge id="30.0" source="0.0" target="31.0"/>
+<edge id="31.0" source="0.0" target="32.0"/>
+<edge id="32.0" source="0.0" target="33.0"/>
+<edge id="33.0" source="0.0" target="34.0"/>
+<edge id="34.0" source="0.0" target="35.0"/>
+<edge id="35.0" source="0.0" target="36.0"/>
+<edge id="36.0" source="0.0" target="19.0"/>
+<edge id="37.0" source="0.0" target="37.0"/>
+<edge id="38.0" source="0.0" target="38.0"/>
+<edge id="39.0" source="0.0" target="39.0"/>
+</edges>
+</graph>
+</gexf>

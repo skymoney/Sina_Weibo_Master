@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="gbk"?>
+<gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1"                     xmlns="http://www.gexf.net/1.1draft">
+<graph defaultedgetype="directed" idtype="string" type="static">
+<nodes count="15">
+<node id="0.0" label="iPhone频道"/>
+<node id="1.0" label="wing妖兽"/>
+<node id="2.0" label="沙夫豪森郡"/>
+<node id="3.0" label="BearLi的微博"/>
+<node id="4.0" label="肥苏仔--该减肥喽"/>
+<node id="5.0" label="一汪清泉见底Yvonne"/>
+<node id="6.0" label="UUknow脱脱水_"/>
+<node id="7.0" label="Lcl李昌乐"/>
+<node id="8.0" label="厌离秽土_欣求淨土"/>
+<node id="9.0" label="ZQMQZZ"/>
+<node id="10.0" label="-i疯boy"/>
+<node id="11.0" label="m_mMin"/>
+<node id="12.0" label="屁嗝Z"/>
+<node id="13.0" label="赤砂之蝎onLy"/>
+<node id="14.0" label="love你hua琨"/>
+</nodes>
+<edges count="14">
+<edge id="0.0" source="0.0" target="1.0"/>
+<edge id="1.0" source="0.0" target="2.0"/>
+<edge id="2.0" source="0.0" target="3.0"/>
+<edge id="3.0" source="0.0" target="4.0"/>
+<edge id="4.0" source="0.0" target="5.0"/>
+<edge id="5.0" source="0.0" target="6.0"/>
+<edge id="6.0" source="0.0" target="7.0"/>
+<edge id="7.0" source="0.0" target="8.0"/>
+<edge id="8.0" source="0.0" target="9.0"/>
+<edge id="9.0" source="0.0" target="10.0"/>
+<edge id="10.0" source="0.0" target="11.0"/>
+<edge id="11.0" source="0.0" target="12.0"/>
+<edge id="12.0" source="0.0" target="13.0"/>
+<edge id="13.0" source="0.0" target="14.0"/>
+</edges>
+</graph>
+</gexf>

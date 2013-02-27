@@ -1,0 +1,264 @@
+﻿
+a {
+cursor: pointer;
+text-decoration: none;
+}
+textarea {
+resize: none;
+}
+body {
+margin: 0;
+font-family: 华文黑体, Serif, Georgia;
+}
+
+
+.mainwrapper {
+width: 100%;
+height: 100%;
+overflow: hidden;
+margin: 0;
+background-color: #EBEBEB;
+}
+.mainwrap {
+width: 620px;
+margin: auto;
+margin-top: 100px;
+}
+.scnTitle {
+font-size: 32px;
+}
+.scnItems {
+
+}
+.scnItem {
+display: block;
+margin: 25px auto 25px auto;
+padding: 20px 0 20px 0;
+border: 1px solid #CCC;
+color: #7F7F7F;
+font-size: 22px;
+text-align: left;
+border-radius: 12px;
+-webkit-border-radius: 12px;
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#D9D9D9),color-stop(1,#D3D3D3));
+}
+
+.scnItemsIntr {
+font-size: 14px;
+text-align: left;
+border-radius: 12px;
+-webkit-border-radius: 12px;
+}
+
+.scnItem.current {
+//background-color: #9BC2F5;
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#C3FFF8),color-stop(1,#9BC2F5));
+text-decoration:none;
+}
+
+.clearfix {
+clear: both;
+}
+.formAct {
+text-align: right;
+}
+.errHint {
+display: none;
+font-size: 13px;
+color: #C00;
+margin: 4px 0px;
+text-align: right;
+}
+.loading {
+display: none;
+text-align: center;
+}
+#popupCon .loading {
+height: 121px;
+}
+#popupCon .input {
+border-color: #CCC;
+border-width: 1px;
+border-style: solid;
+-webkit-box-shadow: 1px 1px 1px 0px #EAEAEA inset;
+-moz-box-shadow: 1px 1px 1px 0px #eaeaea inset;
+box-shadow: 1px 1px 1px 0px #EAEAEA inset;
+height: 88px;
+position: relative;
+border-radius: 3px;
+margin: 15px 0 0;
+background-color: white;
+}
+#popupCon .input.clicked {
+border-color: #ffb941;
+/* -webkit-box-shadow: 1px 1px 1px 0px #ddd inset;
+-moz-box-shadow: 1px 1px 1px 0px #ddd inset;
+-shadow: 1px 1px 1px 0px #ddd inset; */
+}
+#popupCon #pHint {
+font-size: 14px;
+}
+#popupCon #inDepict {
+background: transparent;
+width: 478px;
+height: 86px;
+padding: 5px;
+font-family: "Tahoma", "SimSun";
+font-size: 14px;
+line-height: 18px;
+overflow-x: hidden;
+overflow-y: auto;
+word-wrap: break-word;
+outline: none;
+border: 0;
+margin: 1px 0 0;
+}
+#popupCon #depict {
+display: none;
+font-size: 14px;
+line-height: 21px;
+}
+#popupCon #depictAct {
+margin: 8px 0px 0px;
+overflow: hidden;
+text-align: right;
+}
+#popupCon #depictAct  .re-link {
+display: none;
+float: right;
+font-size: 13px;
+color: #097CD6;
+}
+
+#popupCon #tagAreas {
+display: none;
+margin: 10px 0px;
+}
+#popupCon .tagArea {
+margin: 4px;
+overflow: hidden;
+}
+#popupCon .tagArea .tagCate {
+float: left;
+width: 80px;
+text-align: left;
+padding-top: 2px;
+font-size: 14px;
+color: #333;
+}
+#popupCon .tagArea .tagList {
+float: left;
+width: 392px;
+}
+#popupCon a.tag,
+#popupCon a.tag:link {
+display: inline-block;
+margin: 0 5px 5px 0;
+padding: 0 7px;
+height: 22px;
+font-size: 12px;
+line-height: 22px;
+overflow: hidden;
+background: #F1F1F1;
+border: 1px solid transparent;
+color: #666;
+}
+#popupCon a.tag.clicked,
+#popupCon a.tag.clicked:link {
+border: 1px solid #097CD6;
+color: #333;
+}
+#popupCon #custTags #inTags {
+padding: 3px;
+width: 60%;
+border: 1px solid #CCC;
+}
+#popupCon #custTags .hint {
+font-size: 12px;
+color: #666;
+}
+#popupCon .formAct {
+margin: 8px 0px 0px;
+display: none;
+}
+
+
+.btn-flat {
+display: inline-block;
+border-width: 1px;
+border-style: solid;
+border-color: #BBB #BBB #999;
+color: #444;
+border-radius: 6px;
+-webkit-border-radius: 6px;
+overflow: hidden;
+vertical-align: middle;
+}
+.btn-flat input {
+border: 0;
+height: 25px;
+padding: 0 16px;
+font-size: 13px;
+color: #333;
+margin: 0!important;
+cursor: pointer;
+-webkit-appearance: none;
+border-radius: 4px;
+-webkit-border-radius: 4px;
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#FCFCFC),color-stop(1,#E9E9E9));
+}
+.btn-flat input.hover {
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#C3FFF8),color-stop(1,#9BC2F5));
+}
+
+
+
+#popup {
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+width:480px;
+background:#FFFFFF;
+border:2px solid #cecece;
+z-index:2;
+padding:12px;
+}
+#popup #popupHead {
+padding: 0px 12px;
+width: 100%;
+margin: -12px 0px 10px -12px;
+clear: both;
+background: #E2ECFD;
+overflow: hidden;
+}
+#popup #popupHead #popupTitle {
+float:left;
+padding: 12px 0px;
+font-size: 16px;
+}
+#popup #popupHead #popupClz {
+float:right;
+padding: 10px 0px;
+}
+#popup #popupHead #popupClz a {
+display: inline-block;
+border: 1px solid;
+height: 18px;
+padding: 1px 4px;
+font-size:22px;
+line-height: 14px;
+color:#6fa5fd;
+font-weight:700;
+}
+#popupBkg {
+display:none;
+position:fixed;
+_position:absolute; /* hack for internet explorer 6*/
+height:100%;
+width:100%;
+top:0;
+left:0;
+background:#000000;
+border:1px solid #cecece;
+z-index:1;
+}

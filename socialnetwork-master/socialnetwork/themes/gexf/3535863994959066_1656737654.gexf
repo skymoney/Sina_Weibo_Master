@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="gbk"?>
+<gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1"                     xmlns="http://www.gexf.net/1.1draft">
+<graph defaultedgetype="directed" idtype="string" type="static">
+<nodes count="48">
+<node id="0.0" label="现代快报"/>
+<node id="1.0" label="晓梦迷蝶YUE"/>
+<node id="2.0" label="iPhone频道"/>
+<node id="3.0" label="沙夫豪森郡"/>
+<node id="4.0" label="三石向前看"/>
+<node id="5.0" label="田鸡六金"/>
+<node id="6.0" label="灵动酌涟漪"/>
+<node id="7.0" label="骑虎逛da街"/>
+<node id="8.0" label="陈兆培"/>
+<node id="9.0" label="形容59"/>
+<node id="10.0" label="新闻联播频道"/>
+<node id="11.0" label="News新视线"/>
+<node id="12.0" label="屁嗝Z"/>
+<node id="13.0" label="赤砂之蝎onLy"/>
+<node id="14.0" label="m_mMin"/>
+<node id="15.0" label="春天里的蓝色心际"/>
+<node id="16.0" label="肥苏仔--该减肥喽"/>
+<node id="17.0" label="小J滴三次方"/>
+<node id="18.0" label="spring芳芳"/>
+<node id="19.0" label="智言智语1028"/>
+<node id="20.0" label="时-间胶囊"/>
+<node id="21.0" label="徐冰星"/>
+<node id="22.0" label="深海的小龟"/>
+<node id="23.0" label="三道杠大队长_"/>
+<node id="24.0" label="love你hua琨"/>
+<node id="25.0" label="忧郁豆子"/>
+<node id="26.0" label="解宝山"/>
+<node id="27.0" label="程子bear"/>
+<node id="28.0" label="shigm13"/>
+<node id="29.0" label="BearLi的微博"/>
+<node id="30.0" label="漂泊前沿"/>
+<node id="31.0" label="harsii"/>
+<node id="32.0" label="一汪清泉见底Yvonne"/>
+<node id="33.0" label="厌离秽土_欣求淨土"/>
+<node id="34.0" label="阿豆胡子"/>
+<node id="35.0" label="爱未说说"/>
+<node id="36.0" label="谢梓洪"/>
+<node id="37.0" label="wing妖兽"/>
+<node id="38.0" label="ZQMQZZ"/>
+<node id="39.0" label="安智芯"/>
+<node id="40.0" label="小图像"/>
+<node id="41.0" label="山岗业狼"/>
+<node id="42.0" label="UUknow脱脱水_"/>
+<node id="43.0" label="Lcl李昌乐"/>
+<node id="44.0" label="ZC19907"/>
+<node id="45.0" label="小人101"/>
+<node id="46.0" label="-i疯boy"/>
+<node id="47.0" label="郭茊"/>
+</nodes>
+<edges count="47">
+<edge id="0.0" source="0.0" target="1.0"/>
+<edge id="1.0" source="2.0" target="3.0"/>
+<edge id="2.0" source="0.0" target="4.0"/>
+<edge id="3.0" source="0.0" target="5.0"/>
+<edge id="4.0" source="0.0" target="6.0"/>
+<edge id="5.0" source="0.0" target="7.0"/>
+<edge id="6.0" source="0.0" target="8.0"/>
+<edge id="7.0" source="0.0" target="9.0"/>
+<edge id="8.0" source="0.0" target="10.0"/>
+<edge id="9.0" source="0.0" target="11.0"/>
+<edge id="10.0" source="2.0" target="12.0"/>
+<edge id="11.0" source="2.0" target="13.0"/>
+<edge id="12.0" source="2.0" target="14.0"/>
+<edge id="13.0" source="0.0" target="15.0"/>
+<edge id="14.0" source="2.0" target="16.0"/>
+<edge id="15.0" source="0.0" target="17.0"/>
+<edge id="16.0" source="0.0" target="18.0"/>
+<edge id="17.0" source="0.0" target="19.0"/>
+<edge id="18.0" source="0.0" target="20.0"/>
+<edge id="19.0" source="0.0" target="21.0"/>
+<edge id="20.0" source="0.0" target="22.0"/>
+<edge id="21.0" source="0.0" target="23.0"/>
+<edge id="22.0" source="2.0" target="24.0"/>
+<edge id="23.0" source="0.0" target="25.0"/>
+<edge id="24.0" source="0.0" target="26.0"/>
+<edge id="25.0" source="0.0" target="27.0"/>
+<edge id="26.0" source="0.0" target="28.0"/>
+<edge id="27.0" source="2.0" target="29.0"/>
+<edge id="28.0" source="0.0" target="30.0"/>
+<edge id="29.0" source="0.0" target="31.0"/>
+<edge id="30.0" source="2.0" target="32.0"/>
+<edge id="31.0" source="2.0" target="33.0"/>
+<edge id="32.0" source="0.0" target="34.0"/>
+<edge id="33.0" source="0.0" target="35.0"/>
+<edge id="34.0" source="8.0" target="36.0"/>
+<edge id="35.0" source="2.0" target="37.0"/>
+<edge id="36.0" source="2.0" target="38.0"/>
+<edge id="37.0" source="0.0" target="9.0"/>
+<edge id="38.0" source="0.0" target="39.0"/>
+<edge id="39.0" source="0.0" target="40.0"/>
+<edge id="40.0" source="0.0" target="41.0"/>
+<edge id="41.0" source="2.0" target="42.0"/>
+<edge id="42.0" source="2.0" target="43.0"/>
+<edge id="43.0" source="0.0" target="44.0"/>
+<edge id="44.0" source="0.0" target="45.0"/>
+<edge id="45.0" source="2.0" target="46.0"/>
+<edge id="46.0" source="0.0" target="47.0"/>
+</edges>
+</graph>
+</gexf>

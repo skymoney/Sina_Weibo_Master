@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="gbk"?>
+<gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1"                     xmlns="http://www.gexf.net/1.1draft">
+<graph defaultedgetype="directed" idtype="string" type="static">
+<nodes count="37">
+<node id="0.0" label="tinyfool"/>
+<node id="1.0" label="李德智qq"/>
+<node id="2.0" label="赵潇毅Messi"/>
+<node id="3.0" label="ghosTM55"/>
+<node id="4.0" label="iApp4Me"/>
+<node id="5.0" label="Dion石小地"/>
+<node id="6.0" label="三缘禾"/>
+<node id="7.0" label="Salioer"/>
+<node id="8.0" label="___土拨鼠Lucky"/>
+<node id="9.0" label="98bob"/>
+<node id="10.0" label="特鲁姆斐"/>
+<node id="11.0" label="嗨酒的"/>
+<node id="12.0" label="ZhangRay"/>
+<node id="13.0" label="美丽的刁缠"/>
+<node id="14.0" label="Sandiyin"/>
+<node id="15.0" label="Monster_Efyn"/>
+<node id="16.0" label="aReu柱成---"/>
+<node id="17.0" label="小狮子青-姚人嘉之倔强的肉圆"/>
+<node id="18.0" label="飞跃Wonder"/>
+<node id="19.0" label="StrongerChen"/>
+<node id="20.0" label="我不三俗谁三俗"/>
+<node id="21.0" label="hxue"/>
+<node id="22.0" label="韦恩卑鄙"/>
+<node id="23.0" label="anytao"/>
+<node id="24.0" label="零零发"/>
+<node id="25.0" label="text0"/>
+<node id="26.0" label="cha1fen9"/>
+<node id="27.0" label="环岛kaka"/>
+<node id="28.0" label="芈峮"/>
+<node id="29.0" label="老男人菲哥ustc"/>
+<node id="30.0" label="_小柳说我是闪了腰的企鹅"/>
+<node id="31.0" label="这货想干嘛"/>
+<node id="32.0" label="Roy厉"/>
+<node id="33.0" label="猫控吴点点"/>
+<node id="34.0" label="亮爸梁柱爱吃黄花鱼"/>
+<node id="35.0" label="莉子_51CTO"/>
+<node id="36.0" label="赵乐米"/>
+</nodes>
+<edges count="48">
+<edge id="0.0" source="0.0" target="1.0"/>
+<edge id="1.0" source="0.0" target="2.0"/>
+<edge id="2.0" source="3.0" target="0.0"/>
+<edge id="3.0" source="4.0" target="5.0"/>
+<edge id="4.0" source="0.0" target="6.0"/>
+<edge id="5.0" source="0.0" target="0.0"/>
+<edge id="6.0" source="0.0" target="3.0"/>
+<edge id="7.0" source="0.0" target="7.0"/>
+<edge id="8.0" source="0.0" target="8.0"/>
+<edge id="9.0" source="9.0" target="10.0"/>
+<edge id="10.0" source="0.0" target="11.0"/>
+<edge id="11.0" source="12.0" target="0.0"/>
+<edge id="12.0" source="9.0" target="13.0"/>
+<edge id="13.0" source="0.0" target="0.0"/>
+<edge id="14.0" source="9.0" target="14.0"/>
+<edge id="15.0" source="0.0" target="15.0"/>
+<edge id="16.0" source="0.0" target="4.0"/>
+<edge id="17.0" source="3.0" target="3.0"/>
+<edge id="18.0" source="0.0" target="16.0"/>
+<edge id="19.0" source="0.0" target="17.0"/>
+<edge id="20.0" source="0.0" target="18.0"/>
+<edge id="21.0" source="0.0" target="0.0"/>
+<edge id="22.0" source="4.0" target="19.0"/>
+<edge id="23.0" source="0.0" target="20.0"/>
+<edge id="24.0" source="0.0" target="9.0"/>
+<edge id="25.0" source="0.0" target="21.0"/>
+<edge id="26.0" source="22.0" target="23.0"/>
+<edge id="27.0" source="0.0" target="24.0"/>
+<edge id="28.0" source="0.0" target="25.0"/>
+<edge id="29.0" source="0.0" target="26.0"/>
+<edge id="30.0" source="0.0" target="27.0"/>
+<edge id="31.0" source="0.0" target="28.0"/>
+<edge id="32.0" source="0.0" target="29.0"/>
+<edge id="33.0" source="15.0" target="0.0"/>
+<edge id="34.0" source="0.0" target="22.0"/>
+<edge id="35.0" source="4.0" target="0.0"/>
+<edge id="36.0" source="0.0" target="0.0"/>
+<edge id="37.0" source="0.0" target="9.0"/>
+<edge id="38.0" source="0.0" target="30.0"/>
+<edge id="39.0" source="0.0" target="31.0"/>
+<edge id="40.0" source="0.0" target="32.0"/>
+<edge id="41.0" source="3.0" target="33.0"/>
+<edge id="42.0" source="5.0" target="9.0"/>
+<edge id="43.0" source="0.0" target="34.0"/>
+<edge id="44.0" source="0.0" target="12.0"/>
+<edge id="45.0" source="0.0" target="3.0"/>
+<edge id="46.0" source="23.0" target="35.0"/>
+<edge id="47.0" source="0.0" target="36.0"/>
+</edges>
+</graph>
+</gexf>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Design by http://www.cssmoban.com
+Released for free under a Creative Commons Attribution 3.0 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Analysis Platform for Sina Weibo</title>
+<link href="/themes/css/style.css" rel="stylesheet" type="text/css" />
+<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="/themes/js/cufon-yui.js"></script>
+<script type="text/javascript" src="/themes/js/arial.js"></script>
+<script type="text/javascript" src="/themes/js/cuf_run.js"></script>
+<!-- CuFon ends -->
+{% block js %}
+{% endblock %}
+</head>
+<body>
+<link type="text/css" rel="stylesheet" href="/themes/css/public.css" />
+<link type="text/css" rel="stylesheet" href="/themes/css/modular.css" />
+<link type="text/css" rel="stylesheet" href="/themes/css/js.css" />
+<link type="text/css" rel="stylesheet" href="/themes/css/myspace.css" />
+<link type="text/css" rel="stylesheet" href="/themes/css/global.css" />
+<link rel="stylesheet" type="text/css" href="/themes/css/scn.css" />
+<div class="main">
+
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo"></div>
+      <div class="menu_nav">
+        <ul>
+        {% block menu %}
+			<li><a href="home">Home</a></li>
+			<li><a href="status_fans">Fans Analysis</a></li>
+			<li><a href="scene_market">Scene Marketing</a></li>
+			<li><a href="weibotools">Tools</a></li>
+        {% endblock %}
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        {% block mainbar %}
+        <div class="article">
+          <h2>Template License</h2>
+          <img src="/themes/images/img1.jpg" width="267" height="148" alt="img" class="ilf" />
+          <p>Posted by <a href="#">Owner</a> | Filed under <a href="#">templates</a>, <a href="#">internet</a></p>
+          <p>This is a free CSS website template by <a href="http://www.cssmoban.com/" title="网站模板">cssmoban.com</a>. This 
+work is distributed under the <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>, 
+which means that you are free to use it for any personal or commercial purpose provided you credit me in the form of a link back to 
+<a href="http://www.cssmoban.com/" title="网站模板">cssmoban.com</a>.</p>
+          <p><a href="#">Read more</a> | March 16, 2015</p>
+        </div>
+        <div class="article">
+          <h2>Lorem Ipsum Dolor Sit</h2>
+          <img src="/themes/images/img2.jpg" width="605" height="146" alt="img" />
+          <p>Posted by <a href="#">Owner</a> | Filed under <a href="#">templates</a>, <a href="#">internet</a></p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. <a href="#">Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu posuere nunc justo tempus leo.</a> Donec mattis, purus nec placerat bibendum, dui pede condimentum odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque. Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. Cras id urna. Morbi tincidunt, orci ac convallis aliquam.</p>
+          <p><a href="#">Read more</a> | March 15, 2015</p>
+        </div>
+        {% endblock %}
+      </div>
+      <div class="sidebar">
+        {% block sidebar %}
+        <div class="gadget">
+          <h2 class="star">Sidebar Menu</h2>
+          <ul class="sb_menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TemplateInfo</a></li>
+            <li><a href="#">Style Demo</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Archives</a></li>
+            <li><a href="http://www.cssmoban.com">网站模板</a></li>
+          </ul>
+        </div>
+        <div class="gadget">
+          <h2 class="star">Sponsors</h2>
+          <ul class="ex_menu">
+            <li><a href="http://www.cssmoban.com" title="网站模板">网站模板</a><br />Over 6,000+ Premium Web Templates</li>
+            <li><a href="#" title="WordPress Themes">TemplateSOLD</a><br />Premium WordPress &amp; Joomla Themes</li>
+            <li><a href="http://www.imhosted.com" title="Affordable Hosting">ImHosted.com</a><br />Affordable Web Hosting Provider</li>
+            <li><a href="http://www.dreamstock.com" title="Stock Photos">DreamStock</a><br />Download Amazing Stock Photos</li>
+            <li><a href="http://www.evrsoft.com" title="Website Builder">Evrsoft</a><br />Website Builder Software &amp; Tools</li>
+            <li><a href="http://www.myvectorstore.com" title="Stock Icons">MyVectorStore</a><br />Royalty Free Stock Icons</li>
+          </ul>
+        </div>
+        {% endblock %}
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+<!--
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="col c1">
+        <h2>Image Gallery</h2>
+        <a href="#"><img src="/themes/images/pix1.jpg" width="56" height="56" alt="ad" class="ad" /></a>
+        <a href="#"><img src="/themes/images/pix2.jpg" width="56" height="56" alt="ad" class="ad" /></a>
+        <a href="#"><img src="/themes/images/pix3.jpg" width="56" height="56" alt="ad" class="ad" /></a>
+        <a href="#"><img src="/themes/images/pix4.jpg" width="56" height="56" alt="ad" class="ad" /></a>
+        <a href="#"><img src="/themes/images/pix5.jpg" width="56" height="56" alt="ad" class="ad" /></a>
+        <a href="#"><img src="/themes/images/pix6.jpg" width="56" height="56" alt="ad" class="ad" /></a>
+        <a href="#"><img src="/themes/images/pix7.jpg" width="56" height="56" alt="ad" class="ad" /></a>
+        <a href="#"><img src="/themes/images/pix8.jpg" width="56" height="56" alt="ad" class="ad" /></a>
+        <div class="clr"></div>
+      </div>
+      <div class="col c2">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dui nunc, molestie ut porta et, egestas vel justo.</p>
+        <ul class="sb_menu">
+          <li><a href="#">semper</a></li>
+          <li><a href="#">magna sed purus</a></li>
+          <li><a href="#">tincidunt</a></li>
+        </ul>
+        <p>Praesent nulla ipsum, congue in tincidunt ut, placerat sed erat. <a href="#">Nunc tempor venenatis vehicula.</a></p>
+      </div>
+      <div class="col c3">
+        <h2>Contact</h2>
+        <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Donec mattis, purus nec placerat  ibendum, dui pede condimentum odio, ac blandit ante orci ut diam.</p>
+        <p><strong>Phone:</strong> +1234567<br />
+          <strong>Address:</strong> 123 TemplateAccess Rd<br />
+          <strong>E-mail:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+      </div>
+      <div class="clr"></div>
+    </div>
+</div>
+-->
+  <div class="footer">
+    <div class="footer_resize">
+      <!--<p class="lf">&copy; Copyright MyWebSite. Designed from <a href="http://www.cssmoban.com">网站模板</a></p>-->
+      <!--
+      <ul class="fmenu">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+    </ul>
+    -->
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

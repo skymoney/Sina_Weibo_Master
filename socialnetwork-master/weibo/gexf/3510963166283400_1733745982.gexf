@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="gbk"?>
+<gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1"                     xmlns="http://www.gexf.net/1.1draft">
+<graph defaultedgetype="directed" idtype="string" type="static">
+<nodes count="39">
+<node id="0.0" label="tinyfool"/>
+<node id="1.0" label="苹果数码俱乐部"/>
+<node id="2.0" label="喜欢下雪天的感觉"/>
+<node id="3.0" label="149738381坚白1990"/>
+<node id="4.0" label="口臭花"/>
+<node id="5.0" label="迷失的小书童-符浩"/>
+<node id="6.0" label="邦比快跑"/>
+<node id="7.0" label="donaldhuan"/>
+<node id="8.0" label="咩咩_杨"/>
+<node id="9.0" label="千金夏尔1994"/>
+<node id="10.0" label="Peter_Zang"/>
+<node id="11.0" label="Ian-stark"/>
+<node id="12.0" label="小布头023"/>
+<node id="13.0" label="我把昵称弄丢了"/>
+<node id="14.0" label="周陟"/>
+<node id="15.0" label="王珊琳SunnY"/>
+<node id="16.0" label="superman养乐多"/>
+<node id="17.0" label="静雯Chow"/>
+<node id="18.0" label="无下巴纸面人"/>
+<node id="19.0" label="12月29号梦菡1987"/>
+<node id="20.0" label="九虚"/>
+<node id="21.0" label="颜彼德"/>
+<node id="22.0" label="最爱波涛胸勇de股市"/>
+<node id="23.0" label="千年牛皮糖"/>
+<node id="24.0" label="2NE1霸气女王团飞章1980"/>
+<node id="25.0" label="袁少00"/>
+<node id="26.0" label="JusJack"/>
+<node id="27.0" label="Zhang-_-Hong"/>
+<node id="28.0" label="左文字"/>
+<node id="29.0" label="OMG1OMG"/>
+<node id="30.0" label="alphfer"/>
+<node id="31.0" label="18岁的北冥紫竹"/>
+<node id="32.0" label="许让-鱼"/>
+<node id="33.0" label="禅说心灵"/>
+<node id="34.0" label="三120121三"/>
+<node id="35.0" label="刘文晔"/>
+<node id="36.0" label="玉海上"/>
+<node id="37.0" label="blueRenee"/>
+<node id="38.0" label="1__林__1"/>
+</nodes>
+<edges count="38">
+<edge id="0.0" source="0.0" target="1.0"/>
+<edge id="1.0" source="2.0" target="3.0"/>
+<edge id="2.0" source="0.0" target="4.0"/>
+<edge id="3.0" source="0.0" target="5.0"/>
+<edge id="4.0" source="0.0" target="6.0"/>
+<edge id="5.0" source="7.0" target="8.0"/>
+<edge id="6.0" source="2.0" target="9.0"/>
+<edge id="7.0" source="0.0" target="10.0"/>
+<edge id="8.0" source="0.0" target="11.0"/>
+<edge id="9.0" source="0.0" target="12.0"/>
+<edge id="10.0" source="0.0" target="13.0"/>
+<edge id="11.0" source="14.0" target="15.0"/>
+<edge id="12.0" source="16.0" target="17.0"/>
+<edge id="13.0" source="18.0" target="19.0"/>
+<edge id="14.0" source="0.0" target="20.0"/>
+<edge id="15.0" source="0.0" target="21.0"/>
+<edge id="16.0" source="0.0" target="22.0"/>
+<edge id="17.0" source="14.0" target="23.0"/>
+<edge id="18.0" source="2.0" target="24.0"/>
+<edge id="19.0" source="14.0" target="25.0"/>
+<edge id="20.0" source="0.0" target="26.0"/>
+<edge id="21.0" source="10.0" target="27.0"/>
+<edge id="22.0" source="7.0" target="2.0"/>
+<edge id="23.0" source="14.0" target="28.0"/>
+<edge id="24.0" source="0.0" target="14.0"/>
+<edge id="25.0" source="7.0" target="0.0"/>
+<edge id="26.0" source="7.0" target="29.0"/>
+<edge id="27.0" source="0.0" target="30.0"/>
+<edge id="28.0" source="2.0" target="31.0"/>
+<edge id="29.0" source="7.0" target="32.0"/>
+<edge id="30.0" source="0.0" target="33.0"/>
+<edge id="31.0" source="14.0" target="34.0"/>
+<edge id="32.0" source="7.0" target="35.0"/>
+<edge id="33.0" source="0.0" target="36.0"/>
+<edge id="34.0" source="0.0" target="16.0"/>
+<edge id="35.0" source="2.0" target="37.0"/>
+<edge id="36.0" source="0.0" target="38.0"/>
+<edge id="37.0" source="0.0" target="18.0"/>
+</edges>
+</graph>
+</gexf>

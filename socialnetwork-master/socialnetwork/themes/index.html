@@ -1,0 +1,107 @@
+{% extends "base_nosidebar.html" %}
+{% block menu %}
+<!--
+<li class="active"><a href="home">首页</a></li>
+<li><a href="status_fans">统计分析</a></li>
+<li><a href="">场景营销</a></li>
+<li><a href="weibotools">微博工具</a></li>
+-->
+{% endblock %}
+{% block content %}
+<style type="text/css">
+.buttons li{display:inline;}
+.buttons li img{width:108px;height:108px;margin:0px 87px 0px 87px;}
+</style>
+<script language="javascript">
+    function On(id){
+		if (id == 0)
+		{
+        	document.images['img'+id].src="/themes/images/analytics-l.png";
+    	}
+		else if (id == 1)
+		{
+        	document.images['img'+id].src="/themes/images/market-l.png";
+    	}	
+		else
+		{
+        	document.images['img'+id].src="/themes/images/tools-l.png";
+    	}
+	}
+    function Off(id){
+        if (id == 0)
+		{
+        	document.images['img'+id].src="/themes/images/analytics.png";
+    	}
+		else if (id == 1)
+		{
+        	document.images['img'+id].src="/themes/images/market.png";
+    	}	
+		else
+		{
+        	document.images['img'+id].src="/themes/images/tools.png";
+    	}
+    }
+</script>
+<script type="text/javascript" src="/themes/js/jquery-1.2.6.pack.js"></script>
+<!--s
+<script type="text/javascript">
+$(function(){
+	$(".buttons > li > a").each(function(){
+		$(this).find("img").hover(function(){
+			$(this).animate({
+				width: 120,
+				height: 120,
+				padding: 0,
+				left: 81,
+				top: -6
+			},200).addClass("hover");				   
+		},function(){
+			$(this).animate({
+				width: 108,
+				height: 108,
+				padding: 0,
+				left: 87,
+				top: 0
+			},200).removeClass("hover");	
+		});	
+	});
+});
+</script>
+-->
+<div>
+	<ul class="buttons">
+		<li><a href="status_fans" onMouseOver="On(0)" onMouseOut="Off(0)"><img src="/themes/images/analytics.png" style="border:none" name="img0"/></a></li>
+		<li><a href="scene_market" onMouseOver="On(1)" onMouseOut="Off(1)"><img src="/themes/images/market.png" style="border:none" name="img1"/></a></li>
+		<li><a href="weibotools" onMouseOver="On(2)" onMouseOut="Off(2)"><img src="/themes/images/tools.png" style="border:none" name="img2"></a></li>
+	</ul>
+    <table style="width:99%">
+        <colgroup>
+            <col width="33%" />
+            <col width="33%" />
+            <col width="33%" />
+        </colgroup>
+<!--
+        <tr>
+            <td align="center"><a href="status_fans" onMouseOver="On(0)" onMouseOut="Off(0)"><img src="/themes/images/analytics.png" style="border:none" name="img1"/></a></td>
+            <td align="center"><a href=""><img src="/themes/images/market.png" style="border:none"/></a></td>
+            <td align="center"><a href="weibotools"><img src="/themes/images/tools.png" style="border:none"></a></td>
+        </tr>
+-->
+        <tr>
+            <td align="center"><b style="font-family:verdana;font-size:20px;color:dodgerblue">Fans Analysis</b></td>
+            <td align="center"><b style="font-family:verdana;font-size:20px;color:dodgerblue">Scene Marketing</b></td>
+            <td align="center"><b style="font-family:verdana;font-size:20px;color:dodgerblue">Tools</b></td>
+        </tr>
+        <tr>
+            <td align="center"><b style="color:grey">A direct view of your own fans</b></td>
+            <td align="center"><b style="color:grey">Commodity marketing in different scenes</b></td>
+            <td align="center"><b style="color:grey">Practical tools for users to try this system</b></td>
+        </tr>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+    </table>
+</div>
+{% endblock %}

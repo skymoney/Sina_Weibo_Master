@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="gbk"?>
+<gexf xmlns:viz="http:///www.gexf.net/1.1draft/viz" version="1.1"                     xmlns="http://www.gexf.net/1.1draft">
+<graph defaultedgetype="directed" idtype="string" type="static">
+<nodes count="36">
+<node id="0.0" label="中国新闻周刊"/>
+<node id="1.0" label="ZC_禮儀廉恥"/>
+<node id="2.0" label="张顺科"/>
+<node id="3.0" label="春光乍暖"/>
+<node id="4.0" label="886杂谈频道"/>
+<node id="5.0" label="大大个茶杯"/>
+<node id="6.0" label="驾南瓜车的兔子"/>
+<node id="7.0" label="王恒wangheng"/>
+<node id="8.0" label="陈思明1314"/>
+<node id="9.0" label="醉西安"/>
+<node id="10.0" label="尐爺-征"/>
+<node id="11.0" label="金恒丰贵金属余杭分公司"/>
+<node id="12.0" label="ChicBoutique"/>
+<node id="13.0" label="哥y1在路上"/>
+<node id="14.0" label="周兵多多能"/>
+<node id="15.0" label="赵大厨儿"/>
+<node id="16.0" label="心似宁水"/>
+<node id="17.0" label="新款时装在线"/>
+<node id="18.0" label="天津捷丰奥迪"/>
+<node id="19.0" label="林权Kevin"/>
+<node id="20.0" label="电闪雷鸣001"/>
+<node id="21.0" label="张燃的微博"/>
+<node id="22.0" label="Triangel婕1314"/>
+<node id="23.0" label="丫头滴獨家記憶"/>
+<node id="24.0" label="孤树如影"/>
+<node id="25.0" label="等n1来宠怀"/>
+<node id="26.0" label="毅无反顾-"/>
+<node id="27.0" label="崋龍99527"/>
+<node id="28.0" label="老罗在此"/>
+<node id="29.0" label="浙江突发新闻记者"/>
+<node id="30.0" label="KDS曹杨小汪的新家"/>
+<node id="31.0" label="helenontour"/>
+<node id="32.0" label="浪迹天涯8本尊"/>
+<node id="33.0" label="义乌商报官方微博"/>
+<node id="34.0" label="金华纳汽车咨询"/>
+<node id="35.0" label="利刃出鞘-1新闻频道"/>
+</nodes>
+<edges count="35">
+<edge id="0.0" source="0.0" target="1.0"/>
+<edge id="1.0" source="0.0" target="2.0"/>
+<edge id="2.0" source="0.0" target="3.0"/>
+<edge id="3.0" source="0.0" target="4.0"/>
+<edge id="4.0" source="0.0" target="5.0"/>
+<edge id="5.0" source="0.0" target="6.0"/>
+<edge id="6.0" source="0.0" target="7.0"/>
+<edge id="7.0" source="0.0" target="8.0"/>
+<edge id="8.0" source="0.0" target="9.0"/>
+<edge id="9.0" source="0.0" target="10.0"/>
+<edge id="10.0" source="0.0" target="11.0"/>
+<edge id="11.0" source="0.0" target="12.0"/>
+<edge id="12.0" source="0.0" target="13.0"/>
+<edge id="13.0" source="0.0" target="14.0"/>
+<edge id="14.0" source="0.0" target="15.0"/>
+<edge id="15.0" source="0.0" target="16.0"/>
+<edge id="16.0" source="0.0" target="17.0"/>
+<edge id="17.0" source="0.0" target="18.0"/>
+<edge id="18.0" source="0.0" target="19.0"/>
+<edge id="19.0" source="0.0" target="20.0"/>
+<edge id="20.0" source="0.0" target="21.0"/>
+<edge id="21.0" source="0.0" target="22.0"/>
+<edge id="22.0" source="0.0" target="23.0"/>
+<edge id="23.0" source="0.0" target="24.0"/>
+<edge id="24.0" source="0.0" target="25.0"/>
+<edge id="25.0" source="0.0" target="26.0"/>
+<edge id="26.0" source="0.0" target="27.0"/>
+<edge id="27.0" source="0.0" target="28.0"/>
+<edge id="28.0" source="0.0" target="29.0"/>
+<edge id="29.0" source="0.0" target="30.0"/>
+<edge id="30.0" source="0.0" target="31.0"/>
+<edge id="31.0" source="0.0" target="32.0"/>
+<edge id="32.0" source="0.0" target="33.0"/>
+<edge id="33.0" source="0.0" target="34.0"/>
+<edge id="34.0" source="0.0" target="35.0"/>
+</edges>
+</graph>
+</gexf>

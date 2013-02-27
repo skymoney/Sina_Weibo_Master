@@ -1,0 +1,104 @@
+﻿{% extends "base.html" %}
+{% block js %}
+<!-- jquery lib -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<!-- main js -->
+<script type="text/javascript" src="/themes/js/scn.js"></script>
+{% endblock %}
+{% block menu %}
+<li><a href="home">Home</a></li>
+<li ><a href="status_fans">Fans Analysis</a></li>
+<li class="active"><a href="scene_market">Scene Marketing</a></li>
+<li><a href="weibotools">Tools</a></li>
+{% endblock %}
+{% block mainbar %}
+
+	
+<div class="mainWrapper">
+	<div class="mainWrap">
+	
+		<div class="scnTitle">
+			Scene Marketing
+		</div>
+		<div class="scnItems">
+			<a class="scnItem" data-scn="1" title="Marketing to own fans">
+				<b>Marketing to own fans</b><br><br><div class="scnItemsIntr">According the depict of commodity that you input to find the most relevant fans</div>
+			</a>
+			
+			<a class="scnItem" data-scn="2" title="Realtime marketing to the whole sina weibo network">
+				<b>Realtime marketing to the whole sina weibo network</b><br><br><div class="scnItemsIntr">According the depict of commodity that you input to find the most relevant users in the whole network</div>
+			</a>
+			<a class="scnItem" data-scn="3" title="Marketing based on similar hot weibo">
+				<b>Marketing based on similar hot weibo</b><br><br><div class="scnItemsIntr">According the depict of commodity that you input to find the most relevant users based on similar hot weibo</div>
+			</a>
+		</div>
+
+	</div>
+</div>
+
+
+<div id="popup">
+	<div id="popupHead">
+		<span id="popupTitle">Commodity depict</span>
+		<span id="popupClz"><a title="Close">x</a></span>
+	</div>
+	<div id="popupCon">
+		<div id="pHint">Please input the commodity depict</div>
+		<div class="input" id="inputArea">
+			<form id="form-depict" name="form-depict" style="margin:0px; padding:0px;" method="post" action="/any">
+			<textarea id="inDepict" rows="5" cols="60" name="depict"></textarea>
+			</form>
+		</div>
+		
+		<div class="loading" id="segmenting">
+			<img src="/themes/images/loading.gif" />
+		</div>
+		<div id="depict"></div>
+		
+		<div class="errHint" id="depictErr"></div>			
+		<div id="depictAct">
+			<span class="btn-flat">
+				<input type="button" value="Next" class="btn-ok" id="depictOk" />
+			</span>
+			<span class="re-link">
+				<a id="reDepict">Revise description</a>
+			</span>
+		</div>
+		
+		<div class="clearfix"></div>
+		<div id="tagAreas">
+			<div class="tagArea">
+				<div class="tagCate">
+					Generate tags
+				</div>
+				<div class="tagList" id="genTags"></div>
+			</div>
+			<div class="tagArea">
+				<div class="tagCate">
+					Custom tags
+				</div>
+				<div class="tagList" id="custTags">
+					<input type="text" id="inTags" />
+					<!-- <span class="hint">Please make tags separated by spaces</span>-->
+				</div>
+			</div>
+		</div>
+		
+		<div class="errHint" id="tagErr"></div>
+		<div class="formAct">
+			<span class="btn-flat">
+				<input type="button" value="Confirm" class="btn-ok" id="formOk" />
+			</span>
+		</div>
+		
+		<!-- 隐藏form -->
+		<form style="display:none;" id="scnForm" action="" method="get">
+			<input type="hidden" name="tags" />
+		</form>
+	</div>
+	
+</div>
+<div id="popupBkg"></div>
+{% endblock %}
+{%block sidebar %}
+{% endblock %}
